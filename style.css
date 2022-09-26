@@ -1,0 +1,446 @@
+
+
+html, body, .caja-texto {
+    background-color: #E5E5E5;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+
+
+.logo {
+    /* Logo */
+
+    /* Auto layout */
+    position: absolute;
+    width: 120px;
+    left: 40px;
+    top: 40px;
+    bottom: 936px;
+}
+
+.caja-texto {
+    
+    position: absolute;
+    width: 577px;
+    height: 30%;
+    left: 240px;
+    top: 168px;
+    font-weight: 400;
+    font-size: 32px;
+    resize: none;
+    box-sizing: border-box;
+        
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;    
+
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;   
+}
+
+.caja-texto:empty{
+    border-color: red;
+}
+
+.info-img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 240px;
+    right: 1184px;
+    top: 67%;
+}
+
+
+.info{
+    /* Solo letras minúsculas y sin acentos */
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    top: 65%;
+    left: 264px;
+    right: 971px;
+    font-size: 12px;
+
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    opacity: 0.8;
+}
+
+.btnEncriptar {
+    /* Button */
+    position: absolute;
+    top: 70%;
+    right: 872px;
+    left: 240px;
+    width: 328px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    color: #FFFFFF;
+    border-radius: 24px;
+}
+
+.btnDesencriptar{
+    /* Button */
+    position: absolute;
+    top: 70%;
+    right: 520px;
+    left: 592px;
+    box-sizing: border-box;
+    width: 328px;
+    height: 67px;
+
+    /* Light gray */
+    background: #D8DFE8;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.columna-result{
+   /* Rectangle 1 */
+    position: absolute;
+    width: 400px;
+    height: 75%;
+    right: 40px;
+    top: 40px;
+    bottom: 40px;
+    margin-bottom: 40px;
+
+    /* White */
+    background: #FFFFFF;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+
+.columna-result .result{
+    height: 70%;
+    width: 336px;
+    margin: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+.caja-result {
+    visibility: visible;
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 32px;
+    top: 32px;
+    bottom: 32px;
+    resize: none;
+}
+
+.columna-result img {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 0%;
+}
+
+
+.columna-result .alert-text{
+    position: absolute;
+    top: 38%;
+    width: 336px;
+    height: 58px;
+    margin-top: 35px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    /* or 29px */
+    text-align: center;
+
+    /* Gray/gray-500 */
+    color: #343A40;
+
+}
+
+.columna-result .info-text {
+    position: absolute;
+    top: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+}
+
+.btnCopiar{
+    position: absolute;
+    left: 40px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Light gray */
+    background: #D8DFE8;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    visibility: hidden;
+}
+
+footer {
+    padding: 20px;
+    background: url(img/img-footer.jpg);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 8%;
+    left: 0%;
+    bottom: 0%;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+/*tablet view*/
+@media screen and (min-width:376px) and (max-width:768px) { 
+    body{ 
+        box-sizing: border-box;
+        height: auto;
+        width: 768px;
+        border-radius: 0px;
+
+    }
+    .areaTexto {
+        width: 100%;
+        height: fit-content;
+    }
+    .caja-texto{
+        width: 89%;
+        height: 20%;
+        left: 40px;
+        top: 20%;
+        resize: none;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .info{
+        width: 100%;
+        left: 65px;
+        top: 47%;
+        margin: auto 0px;
+    }
+    .info-img {
+        left: 40px;
+        top: 47%;
+        margin: auto 0px;
+    }
+
+    .btnEncriptar{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 332px;
+        height: 67px;
+        margin: auto 24px;
+    }
+
+    .btnDesencriptar{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 332px;
+        height: 67px;
+        margin: auto 24px;
+    }
+
+    .columna-result{
+        width: 80%;
+        height: 20%;
+        left: 40px;
+        right: 40px;
+        top: 65%;
+        padding: 32px;
+    }
+    .columna-result .result {
+        width: 90%;
+        height: 50%;
+        left: 40px;
+        top: 1001px;
+        resize: none;
+        box-sizing: border-box;
+    }
+    .columna-result img {
+        visibility: hidden;
+    }
+
+    .columna-result .alert-text{
+        top: 0%;
+        text-align: center;
+        font-size:18px;
+        width: 100%;
+        left: 40%;
+    }
+
+    .columna-result .info-text{
+        display: block;
+        top: 7%;
+        left: 40%;
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .columna-result .btnCopiar {
+        left: 25%;
+        bottom: 5%;  
+        margin: 10PX;      
+    }
+
+    footer {
+        height: 50px;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        margin-top: 8%;
+        left: 0%;
+        bottom: 0%;
+        text-align: center;
+        color: #E5E5E5;
+    }
+}
+
+/*smartphone view*/
+
+  @media screen and (max-width:375px){
+    body{
+        width: 375px;
+        height: 933px;
+    }
+
+    .areaTexto {
+        width: 100%;
+        height: fit-content;
+    }
+    .caja-texto{
+        width: 89%;
+        height: 20%;
+        left: 40px;
+        top: 20%;
+        resize: none;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .info{
+        width: 100%;
+        left: 65px;
+        top: 47%;
+        margin: auto 0px;
+    }
+    .info-img {
+        left: 40px;
+        top: 47%;
+        margin: auto 0px;
+    }
+
+    .btnEncriptar{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 332px;
+        height: 67px;
+        margin: auto 24px;
+    }
+
+    .btnDesencriptar{
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        width: 332px;
+        height: 67px;
+        margin: auto 24px;
+    }
+
+    .columna-result{
+        width: 72%;
+        height: 20%;
+        left: 5%;
+        right: 40px;
+        top: 70%;
+        padding: 32px;
+    }
+    .columna-result .result {
+        width: 90%;
+        height: 50%;
+        left: 5%;
+        top: 1001px;
+        resize: none;
+        box-sizing: border-box;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+    .columna-result img {
+        visibility: hidden;
+    }
+
+    .columna-result .alert-text{
+        top: 0%;
+        text-align: center;
+        font-size:18px;
+        width: 70%;
+        left: 5%;
+    }
+
+    .columna-result .info-text{
+        display: block;
+        top: 10%;
+        left: 5%;
+        width: 70%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .columna-result .btnCopiar {
+        margin-left: 3%;
+        margin-right: auto;
+        width: 70%;
+        top:65%;
+        height: 20%;
+    }
+
+    footer {
+        height: 50px;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        margin-top: 8%;
+        left: 0%;
+        bottom: 0%;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+  }

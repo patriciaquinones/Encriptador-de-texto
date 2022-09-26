@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Encriptador de textos.</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png">
+                </a>
+            </h1>
+        </header>
+        <main>
+            <section class="areaTexto">
+                <textarea id="textoIngresado" class="caja-texto" rows="10" cols="100" placeholder="Ingrese el texto aqui."></textarea>
+            
+                <img class="info-img"  src="img/signo-de-exclamacion.png">
+                <p class="info">Sólo letras mínusculas y sin acentos.</p>
+    
+                <button class="btnEncriptar" onclick="estadoEncriptado(), estado()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="estadoDesencriptado(), estado()">Desencriptar</button>
+            </section>
+            
+            <section class="columna-result" id="columna-result">
+                <textarea id="resultado" name="result" class="result"></textarea>
+                <div id="caja-result" class="caja-result">
+                    <img src="img/columna_img.jpg">
+                    <p class="alert-text">Ningún mensaje fue encontrado</p>
+                    <p class="info-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button class="btnCopiar" id="btnCopiar" onclick="copiar()">Copiar</button>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright"> &copy Copyright Patricia Quiñones - 2022</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
